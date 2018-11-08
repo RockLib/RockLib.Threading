@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Rock.Core\Threading\RockLib.Threading.csproj" />
+    <ProjectReference Include="..\RockLib.Threading\RockLib.Threading.csproj" />
   </ItemGroup>
 
   <ItemGroup>

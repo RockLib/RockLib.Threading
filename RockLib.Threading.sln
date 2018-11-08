@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RockLib.Threading", "Rock.Core\Threading\RockLib.Threading.csproj", "{5421475F-E68A-44DD-8746-8FE14451A913}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RockLib.Threading", "RockLib.Threading\RockLib.Threading.csproj", "{5421475F-E68A-44DD-8746-8FE14451A913}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RockLib.Threading.Tests", "RockLib.Threading.Tests\RockLib.Threading.Tests.csproj", "{227DE903-87C1-4067-BE65-C94D620D60C4}"
 EndProject
