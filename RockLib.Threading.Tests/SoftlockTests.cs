@@ -5,10 +5,13 @@ namespace RockLib.Threading.Tests
 {
     public class SoftlockTests
     {
-        [Fact]
-        public void IsLockAcquired_WillReturnTrue_WhenPriorLockHasBeenAcquired()
+        [Fact(DisplayName = "TryAcquire method sets IsLockAckquired property to true")]
+        public void TryAcquireTest1()
         {
             var softlock = new SoftLock();
+
+            // Prove that the lock is not acquired initially
+            softlock.IsLockAcquired.Should().BeFalse();
 
             // This will set the lock to true
             softlock.TryAcquire();
@@ -16,18 +19,26 @@ namespace RockLib.Threading.Tests
             softlock.IsLockAcquired.Should().BeTrue();
         }
 
-        [Fact]
-        public void IsLockAcquired_WillReturnFalse_WhenPriorLockHasNotBeenAcquired()
+        [Fact(DisplayName = "TryAcquire returns true when the lock is acquired")]
+        public void TryAcquireTest2()
         {
             var softlock = new SoftLock();
 
-            // call nothing, should be false by default
-
-            softlock.IsLockAcquired.Should().BeFalse();
+            softlock.TryAcquire().Should().BeTrue();
         }
 
-        [Fact]
-        public void Release_WillReleaseExistingLock_WillSignalByIsLockAcquired()
+        [Fact(DisplayName = "TryAcquire returns false when the lock has already been acquired")]
+        public void TryAcquireTest3()
+        {
+            var softlock = new SoftLock();
+
+            softlock.TryAcquire();
+
+            softlock.TryAcquire().Should().BeFalse();
+        }
+
+        [Fact(DisplayName = "Release method sets IsLockAcquired property back to false")]
+        public void ReleaseTest()
         {
             var softlock = new SoftLock();
 
@@ -40,6 +51,6 @@ namespace RockLib.Threading.Tests
 
             // verify it has been released
             softlock.IsLockAcquired.Should().BeFalse();
-        }       
+        }
     }
 }
