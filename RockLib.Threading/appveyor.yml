@@ -79,6 +79,8 @@ deploy:
   tag: $(appveyor_repo_tag_name)
   release: $(appveyor_repo_commit_message)
   description: 'A changelog is available at https://github.com/RockLib/RockLib.Threading/blob/main/RockLib.Threading/CHANGELOG.md.'
+  auth_token:
+    secure: KXPWPPgQiqWszV5SxCVjuBqrT+ZAwPYG9ArtFURPv4ZCPQYEr+7kiHcUj+rMKapA
   on:
     appveyor_repo_tag: true
     appveyor_repo_tag_name: $(csproj_build_version)
