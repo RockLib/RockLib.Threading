@@ -1,43 +1,33 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-    <TargetFrameworks>net5.0;netstandard2.0;netstandard1.6;net45;net40;net35;</TargetFrameworks>
-  </PropertyGroup>
-
-  <PropertyGroup>
-    <PackageId>RockLib.Threading</PackageId>
-    <PackageVersion>1.0.6</PackageVersion>
-    <Authors>RockLib</Authors>
-    <Description>Various classes related to Threading.</Description>
-    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <PackageReleaseNotes>A changelog is available at https://github.com/RockLib/RockLib.Threading/blob/main/RockLib.Threading/CHANGELOG.md.</PackageReleaseNotes>
-    <PackageProjectUrl>https://github.com/RockLib/RockLib.Threading</PackageProjectUrl>
-    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
-    <PackageIcon>icon.png</PackageIcon>
-    <Copyright>Copyright 2017-2021 (c) Rocket Mortgage. All rights reserved.</Copyright>
-    <PackageTags>threading softlock</PackageTags>
-    <Version>1.0.0</Version>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <PublishRepositoryUrl>True</PublishRepositoryUrl>
-    <EmbedUntrackedSources>True</EmbedUntrackedSources>
-    <DebugType>Embedded</DebugType>
-  </PropertyGroup>
-
-  <PropertyGroup>
-    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(PackageId).xml</DocumentationFile>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)'=='Release'">
-    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <None Include="..\LICENSE.md" Pack="true" PackagePath="" />
-    <None Include="..\icon.png" Pack="true" PackagePath=""/>
-  </ItemGroup>
-  
-  <ItemGroup>
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All"/>
-  </ItemGroup>
-  
+	<PropertyGroup>
+		<Authors>RockLib</Authors>
+		<Copyright>Copyright 2017-2022 (c) Rocket Mortgage. All rights reserved.</Copyright>
+		<DebugType>Embedded</DebugType>
+		<Description>Various classes related to Threading.</Description>
+		<EmbedUntrackedSources>True</EmbedUntrackedSources>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageId>RockLib.Threading</PackageId>
+		<PackageVersion>2.0.0</PackageVersion>
+		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+		<PackageReleaseNotes>A changelog is available at https://github.com/RockLib/RockLib.Threading/blob/main/RockLib.Threading/CHANGELOG.md.</PackageReleaseNotes>
+		<PackageProjectUrl>https://github.com/RockLib/RockLib.Threading</PackageProjectUrl>
+		<PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+		<PackageIcon>icon.png</PackageIcon>
+		<PackageTags>threading softlock</PackageTags>
+		<PublishRepositoryUrl>True</PublishRepositoryUrl>
+		<Version>2.0.0</Version>
+	</PropertyGroup>
+	<PropertyGroup>
+		<DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(PackageId).xml</DocumentationFile>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)'=='Release'">
+		<ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+	</PropertyGroup>
+	<ItemGroup>
+		<None Include="..\LICENSE.md" Pack="true" PackagePath="" />
+		<None Include="..\icon.png" Pack="true" PackagePath="" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+	</ItemGroup>
 </Project>
