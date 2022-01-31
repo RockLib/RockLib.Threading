@@ -7,7 +7,7 @@
 		<EmbedUntrackedSources>True</EmbedUntrackedSources>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<PackageId>RockLib.Threading</PackageId>
-		<PackageVersion>2.0.0</PackageVersion>
+		<PackageVersion>1.0.6</PackageVersion>
 		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
 		<PackageReleaseNotes>A changelog is available at https://github.com/RockLib/RockLib.Threading/blob/main/RockLib.Threading/CHANGELOG.md.</PackageReleaseNotes>
 		<PackageProjectUrl>https://github.com/RockLib/RockLib.Threading</PackageProjectUrl>
@@ -15,7 +15,7 @@
 		<PackageIcon>icon.png</PackageIcon>
 		<PackageTags>threading softlock</PackageTags>
 		<PublishRepositoryUrl>True</PublishRepositoryUrl>
-		<Version>2.0.0</Version>
+		<Version>1.0.6</Version>
 	</PropertyGroup>
 	<PropertyGroup>
 		<DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(PackageId).xml</DocumentationFile>
