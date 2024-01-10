@@ -1,4 +1,8 @@
-# **RockLib.Threading Deprecation**
+# :warning: Deprecation Warning :warning:
+
+This library has been deprecated and will no longer receive updates.
+
+---
 
 RockLib has been a cornerstone of our open source efforts here at Rocket Mortgage, and it's played a significant role in our journey to drive innovation and collaboration within our organization and the open source community. It's been amazing to witness the collective creativity and hard work that you all have poured into this project.
 
@@ -6,7 +10,9 @@ However, as technology relentlessly evolves, so must we. The decision to depreca
 
 We want to express our heartfelt thanks to all the contributors and users who have been a part of this incredible journey. Your contributions, feedback, and enthusiasm have been invaluable, and we are genuinely grateful for your dedication. 🚀
 
-# RockLib.Threading
+---
+
+## RockLib.Threading
 
 This library contains a single class: `RockLib.Threading.SoftLock`, which is an object that enables exclusive access to critical sections of code. Unlike a true lock, where a thread will block while another thread has the lock, a "soft lock" will cause a thread to skip over a critical section of code if another thread has the lock.
 
